@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url('./font/FreeSans.ttf');
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('./font/Lora-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Helvetica-Neue-ME';
+  src: url('./font/Helvetica-Neue-Medium-Extended.ttf');
+}@font-face {
+  font-family: 'Inter';
+  src: url('./font/InterTight-Light.ttf');
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 4rem);
+}
+
+.primary-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background: var(--clr-primary-400);
+  background-color: #0A0F14 ;
+}
+
+
+.nav-list{
+  text-align:right;
+}
+.nav-list a {
+color: #FFF;
+font-family: 'Lora';
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}
+.nav-list li{
+  display:inline-block;
+  margin-right: 50px;
+}
+.download-cv li{
+  float:left;
+  font-family: 'Lora';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000000;
+  text-decoration: none;
+  padding:13px;
+  margin-left: 40px;
+  border-radius: 40px;
+  background-color: #FFF;
+}
+/*  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+section{
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: start;
+}
+h1{
+color: #FFF;
+text-align: center;
+font-family: 'Helvetica-Neue-ME';
+font-size: 140px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.subtitulo{
+color: #24FF00;
+text-align: center;
+font-family: 'Inter';
+font-size: 130px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+h2{
+  margin-top:8vh;
+  font-family: 'Helvetica-Neue';
+  word-spacing:4px;
+  font-size: 6vh;
+  color: white; 
+}
+.container{
+  display: block;
+  scroll-snap-type: y mandatory; 
+  overflow-y: scroll;
+  height: 100vh;
+  position: relative
+}
+body{
+  background-color:#0A0F14;
+}
+.pcgif{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 20px;
+}
+
+.section-1 h1{
+  color: #FFF;
+text-align: center;
+font-family: 'Helvetica-Neue-ME';
+font-size: 140px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.section-1 subtitulo{
+color: #24FF00;
+text-align: center;
+font-family: 'Inter';
+font-size: 128px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.section-2{
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center; 
+}
+
+.text{
+  margin-left: 70px;
+  float:left;
+  width: 870px;
+  height: 900px;
+  flex-shrink: 0;
+}
+.section-2 h2{
+  color: #fff;
+  font-family: 'Helvetica-Neue-ME';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  width: 100%; 
+  text-align: left;
+}
+
+p{
+  color: #FFF;
+  text-align: justify;
+  font-family: 'Inter';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.techs img{
+  display: flex;
+  height: 200px;
+  width: 200px;
+}
+.js-fig img{
+  width: 300px;
+}
+.c-fig img{
+  margin-left:40px;
+}
+.c-fig figcaption{
+  margin-left: 40px;
+}
+
+.techs h2{
+  display: inline-block;
+  margin-top: 6rem;
+  color: #24FF00;
+  font-family: 'Helvetica-Neue-ME';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+figcaption{
+  text-align: center;
+  color: white;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-1 {
+  margin-top: 20px;
+}
+
+.row-2 {
+  margin-top: 60px;
+  gap:30px;
+}
+
+.row-3 img{
+  display: inline-block;
+  width: 450px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+#section-3 h1{
+  font-size: 80px;
+}
+
+#section-3 figure{
+  display:inline-block
+}
+
+#section-3 figcaption{
+  font-weight: 300;
+  font-size: 20px;
+  margin-left:90px;
+}
+
+#section-4 h1{
+  margin-top:60px;
+  font-size: 80px;
+  text-align: left;
+  margin-left: 200px;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.contact{
+  margin-top:500px;
+
+}
+#section-4 h2{
+  font-family: 'Helvetica-Neue-ME';
+  font-size: 60px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 200px;
+}
+
+#section-4 a{
+  font-family: 'Lora';
+  font-size: 60px;
+  font-weight: 50;
+  text-align: left;
+  text-decoration: none;
+  color:#FFF;
+  display: block;
+  justify-content: center;
+  margin-left:200px;
+}
