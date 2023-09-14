@@ -223,13 +223,29 @@ figcaption{
   gap:30px;
 }
 
-.row-3 img{
-  display: inline-block;
-  width: 450px;
-  margin-left: 100px;
-  justify-content: center;
+.row-3{
+  display: flex;
+  overflow-x: auto; 
+  padding: 20px; 
+  justify-content: flex-start; 
   align-items: center;
-  margin-top: 150px;
+  white-space: nowrap; 
+  max-width: 80%; 
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+.row-3 figure{
+  margin-right: 10px; 
+  display: inline-block;
+  text-align: center;
+}
+.row-3 img{
+  max-width: 100%; 
+  height: auto;
+  max-height: 200px; 
+}
+#section-3{
+  text-align: center;
 }
 
 #section-3 h1{
@@ -237,7 +253,7 @@ figcaption{
 }
 
 #section-3 figure{
-  display:inline-block
+  display:inline-block;
 }
 
 #section-3 figcaption{
@@ -278,3 +294,4 @@ figcaption{
   justify-content: center;
   margin-left:200px;
 }
+
